@@ -89,12 +89,13 @@
             </div>
             <div class="contact_form">
                 <!-- <h1>CONTACT FORM</h1> -->
-                <form action="https://formspree.io/f/mvojvbzz" method="post">
+                <form  action="https://formspree.io/f/mvojvbzz"
+                method="POST">
                     <label class="form_label" for="name">First name:</label>
                     <input type="text" name="name" id="name" placeholder="Enter your full name" class="contact_form_txt"
                         required>
 
-                    <label class="form_label" for="email">Email Address:</label>
+                    <label class="form_label" for="email" >Email Address:</label>
                     <input type="email" name="email" id="email" placeholder="Enter your email" class="contact_form_txt"
                         required>
 
@@ -104,11 +105,11 @@
                     <p class="security">We won't share your contact details with anyone else.</p>
 
                     <label class="form_label" for="querry">Querry:</label>
-                    <textarea id="querry" name="querry" placeholder="Enter your Query..."
+                    <textarea id="querry" name="message" placeholder="Enter your Query..."
                         class="contact_form_txtarea"></textarea>
                     <!-- <input type="submit" value="Submit" name="Submit" class="btn btn_primary contact_form_btn"> -->
                     <div class="btn_form_wrapper">
-                        <button class="btn btn_primary">Submit</button>
+                        <button type="submit" class="btn btn_primary">Submit</button>
                     </div>
                 </form>
             </div>
