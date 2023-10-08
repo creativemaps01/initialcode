@@ -1,23 +1,14 @@
 .contact_us {
-  /* height: 100vh; */
   padding: 2rem 3.5rem;
-  /* background-color: blue; */
 }
 
 .contact_details {
-  justify-content: space-evenly;
-  /* background-color: blueviolet; */
+  justify-content: space-between;
   margin: 4rem;
-  /* align-items: center; */
-}
-
-.contact_wrapper {
-  margin: 5rem 0;
 }
 
 .contact_info {
   flex-basis: 45%;
-  /* background-color: rgb(0, 255, 34); */
 }
 
 .firm_name {
@@ -131,12 +122,6 @@
   align-items: center;
 }
 
-.contact_form_btn {
-  width: 100%;
-  border-radius: 50px;
-  text-align: center;
-}
-
 .map {
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -145,24 +130,55 @@
 }
 
 @media only screen and (max-width: 770px) {
+  .contact_us {
+    padding: 1rem 2rem;
+  }
+
+  .contact_details {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+
+  .contact_info {
+    flex-basis: 100%;
+  }
+
+  .firm_name {
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+
+  .timings > h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact_icon > i {
+    font-size: 1rem;
+  }
+
+  .contact_icon > a,
+  .contact_icon > span {
+    font-size: 1rem;
+  }
+
   .contact_form {
-    padding: 10px;
+    width: 100%;
+    margin: 2rem 0;
+    flex-basis: 100%;
+    padding: 1rem;
   }
 
   .contact_form_txt {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 5px 15px;
-    border-radius: 20px;
+    padding: 10px;
   }
 
   .contact_form_txtarea {
-    height: 80px;
-    margin-bottom: 15px;
-    padding: 5px 15px;
+    margin: 7px 0 10px 0;
+    padding: 10px;
   }
 
-  .contact_form_btn {
-    margin: 0 auto;
+  .map {
+    width: 80vw;
+    justify-content: center;
   }
 }

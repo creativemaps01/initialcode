@@ -4,16 +4,15 @@
 
 .space {
   height: 120vh;
-  /* background-color: blue; */
 }
 
 .portfolio_header {
+  z-index: -2;
   top: 0;
   position: absolute;
-  height: 150vh;
+  height: 120vh;
   width: 100%;
   justify-content: space-between;
-  /* background-color: thistle; */
 }
 
 .header_left_txt {
@@ -27,20 +26,14 @@
   width: 65vw;
   height: 60vh;
   object-fit: cover;
-  /* background-color: aqua; */
   position: absolute;
   top: 60vh;
-}
-
-.portfolio_header_left {
-  /* background-color: bisque; */
 }
 
 .portfolio_header_right {
   background-color: #4696936f;
   flex-basis: 60vw;
   height: 80vh;
-  z-index: -1;
   padding: 4rem 1rem 1rem 6rem;
 }
 
@@ -62,11 +55,279 @@
 
 .h1_wrapper {
   flex-basis: 30%;
-  /* background-color: aquamarine; */
   align-items: center;
 }
 
 .portfolio_text > p {
   flex-basis: 40%;
-  /* background-color: hotpink; */
+}
+
+.portfolio_showcase,
+.gallery_work {
+  padding: 2rem 3.5rem;
+}
+
+.showcase_div {
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.portfolio_img {
+  width: 22vw;
+  object-fit: cover;
+  height: 25rem;
+}
+
+/* GALLERY STARTS */
+.margin_4 {
+  margin: 4rem;
+}
+
+.mr_tb_lg {
+  margin: 2rem 0;
+}
+
+.justify_btw {
+  justify-content: space-between;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+/* birdals gallery starts */
+.gallery_work_left {
+  flex-basis: 25%;
+  padding: 6rem 2rem 6rem 0;
+}
+
+.gallery_work_right {
+  padding: 1rem 0;
+  flex-basis: 75%;
+  gap: 0.5rem;
+}
+
+.gallery_work_bridal {
+  height: 18rem;
+  width: 18.7rem;
+  object-fit: cover;
+}
+
+.gallery_work_heading {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.line {
+  height: 1rem;
+  width: 75%;
+  margin: 0.7rem 0;
+}
+
+.line1 {
+  background-color: #3f7e7c;
+}
+
+.line2 {
+  background-color: #3f7e7cc9;
+}
+
+.line3 {
+  background-color: #3f7e7c98;
+}
+
+.line4 {
+  background-color: #3f7e7c62;
+}
+
+.line5 {
+  background-color: #3f7e7c20;
+}
+/* Bridal galley ends */
+
+/* models gallery starts */
+.models_wrapper {
+  margin: 4rem 4rem;
+}
+
+.gallery_model_imgs {
+  flex-basis: 75%;
+}
+
+.model_single {
+  width: 18.5rem;
+  height: 34rem;
+  object-fit: cover;
+}
+
+.model_half {
+  width: 18.5rem;
+  height: 16.5rem;
+  object-fit: cover;
+}
+
+.gallery_model_txt {
+  padding: 9rem 0 9rem 2rem;
+  flex-basis: 25%;
+  text-align: right;
+}
+/* models gallery ends */
+
+/* beautiful moments gallery */
+.beautiful_moments_big,
+.beautiful_moments_grid {
+  flex-basis: 49%;
+}
+
+.beautiful_moments_big1,
+.beautiful_moments_grid1 {
+  flex-basis: 50%;
+}
+
+.grid_img {
+  width: 18.3rem;
+  height: 16.7rem;
+  object-fit: cover;
+}
+
+.grid_img1 {
+  width: 18.7rem;
+  height: 16.6rem;
+  object-fit: cover;
+}
+
+.big_img {
+  height: 34.2rem;
+  width: 38rem;
+  object-fit: cover;
+}
+
+.big_img1 {
+  height: 34.2rem;
+  width: 36.5rem;
+  object-fit: cover;
+}
+/* beautiful moments gallery */
+
+/* img slider starts */
+.slider_img {
+  height: 19.563rem;
+  width: 27.271rem;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 770px) {
+  .portfolio_text,
+  .portfolio_showcase,
+  .gallery_work {
+    padding: 1rem 2rem;
+  }
+
+  .space {
+    height: 0vh;
+  }
+
+  .portfolio_header {
+    display: none;
+  }
+
+  .portfolio_text {
+    flex-direction: column;
+  }
+
+  .h1_wrapper {
+    flex-basis: 100%;
+  }
+
+  .portfolio_text > p {
+    flex-basis: 100%;
+  }
+
+  .showcase_div {
+    margin: 0;
+  }
+
+  .portfolio_img {
+    margin-top: 0.5rem;
+    width: 40vw;
+    height: 40vh;
+  }
+
+  /* birdals gallery starts */
+  .gallery_work_heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .gallery_work_left {
+    flex-basis: 100%;
+    padding: 0;
+  }
+
+  .gallery_work_right {
+    flex-basis: 100%;
+    gap: 0;
+  }
+
+  .gallery_work_bridal,
+  .model_half,
+  .model_single {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  /* Bridal galley ends */
+
+  /* models gallery starts */
+  .models_wrapper {
+    margin: 1rem;
+    flex-wrap: wrap-reverse;
+  }
+
+  .gallery_model_imgs {
+    margin-top: 1rem;
+    flex-basis: 100%;
+  }
+
+  .model_single {
+    max-height: 20rem;
+    min-width: 43vw;
+    max-width: 43vw;
+    margin: 0.5rem 0;
+  }
+
+  .gallery_model_txt {
+    padding: 0;
+    flex-basis: 100%;
+  }
+  /* models gallery ends */
+
+  /* beautiful moments gallery */
+  .beautiful_moments_div {
+    margin: 2rem 1rem;
+  }
+
+  .beautiful_moments_big,
+  .beautiful_moments_grid,
+  .beautiful_moments_big1,
+  .beautiful_moments_grid1 {
+    flex-basis: 100%;
+  }
+
+  .grid_img,
+  .grid_img1 {
+    height: 10rem;
+    min-width: 42vw;
+    max-width: 42vw;
+    margin: 0.3rem 0;
+  }
+
+  .big_img,
+  .big_img1 {
+    height: auto;
+    min-width: 90vw;
+    max-width: 90vw;
+    margin: 0.5rem 0;
+  }
+  /* beautiful moments gallery */
 }
