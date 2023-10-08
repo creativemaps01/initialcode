@@ -2,11 +2,9 @@
 header {
   padding: 2rem 3.5rem;
   justify-content: space-between;
-  /* background-color: green; */
 }
 
 .header_left {
-  /* background-color: aqua; */
   flex-basis: 30%;
   display: flex;
   justify-content: center;
@@ -14,11 +12,11 @@ header {
 }
 
 .catchy_heading {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 .primary_heading {
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 .header_tagline {
@@ -27,18 +25,17 @@ header {
 
 .btn_primary {
   margin-right: 1rem;
+  color: white;
 }
 
 .header_right {
-  /* background-color: yellowgreen; */
   flex-basis: 67%;
   justify-content: space-between;
 }
 
 .header_points {
-  /* background-color: hotpink; */
   max-width: 19vw;
-  height: 83vh;
+  height: 81vh;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
@@ -68,7 +65,6 @@ header {
 }
 
 .header_img {
-  /* height: 65vh; */
   height: 80%;
   width: 19vw;
   object-fit: cover;
@@ -78,8 +74,6 @@ header {
 /* focus starts */
 .focus {
   height: 100vh;
-  /* background-color: rosybrown; */
-  /* padding: 2rem 3.5rem; */
   padding: 3rem 3.5rem;
 }
 
@@ -110,7 +104,6 @@ header {
 
 /* showcase starts */
 .showcase {
-  /* background-color: rgb(48, 218, 32); */
   height: 100vh;
   padding: 2rem 3.5rem;
   display: flex;
@@ -126,7 +119,6 @@ header {
 
 .project {
   width: 22rem;
-  /* background-color: aqua; */
   margin: 1rem;
 }
 
@@ -143,6 +135,7 @@ header {
 
 .showcase1 {
   width: 22rem;
+  height: 17rem;
   object-fit: cover;
 }
 
@@ -164,14 +157,6 @@ header {
   position: relative;
 }
 
-/* .service_wrapper {
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-} */
-
 .service_box {
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -191,9 +176,6 @@ header {
   margin: 1rem 0.5rem;
   width: 18rem;
   padding: 1rem;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .service_icon {
@@ -216,7 +198,6 @@ header {
   width: 27vw;
   height: 40vh;
   position: absolute;
-  /* z-index: 1; */
 }
 
 .servces_img1 {
@@ -240,9 +221,9 @@ header {
 }
 
 .company {
-  color: var(--light-primary);
+  color: var(--primary-color);
   font-weight: bold;
-  text-shadow: 2px 2px var(--txt-dark-grey);
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.478);
 }
 
 .search_domain > h1 {
@@ -264,7 +245,6 @@ header {
 .icon_styling {
   margin-right: 0.7rem;
   color: var(--primary-color);
-  font-size: 1.2rem;
 }
 
 .search_wrapper {
@@ -286,20 +266,21 @@ header {
   border-radius: 2.5rem;
   padding: 0.7rem 2.5rem;
   margin-right: 0;
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .search_domain > p {
   max-width: 60vw;
+  color: white;
 }
 /* newsletter ends */
 
 /* testimonial starts */
 #testimonials {
   text-align: center;
-  /* height: 100%; */
   height: 100vh;
   overflow-x: hidden;
-  /* float: left; */
   position: relative;
   padding: 30px 0;
   z-index: 1;
@@ -311,13 +292,6 @@ header {
   width: 100%;
   padding-bottom: 40px;
 }
-
-/* .section-title p {
-  color: var(--primary-color);
-  line-height: 20px;
-  max-width: 550px;
-  margin: 0 auto;
-} */
 
 .swiper-container {
   width: 100%;
@@ -491,3 +465,202 @@ header {
   transition: all 300ms ease-in-out;
 }
 /* testimonial ends */
+
+@media only screen and (max-width: 770px) {
+  header,
+  .services,
+  .showcase,
+  .focus {
+    padding: 1rem 2rem;
+  }
+
+  /* header starts */
+  .header_left {
+    flex-basis: 100%;
+  }
+
+  .catchy_heading {
+    font-size: 1.7rem;
+  }
+
+  .primary_heading {
+    font-size: 2.1rem;
+  }
+
+  .header_tagline {
+    margin: 0.5rem 0;
+  }
+
+  .btn_primary {
+    margin-right: 0.5rem;
+  }
+
+  .header_right {
+    flex-basis: 100%;
+    height: 40vh;
+  }
+
+  .header_points {
+    max-width: 30%;
+    height: 30vh;
+  }
+
+  .box_content {
+    display: none;
+  }
+
+  .box1 {
+    top: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .box2 {
+    top: 2rem;
+  }
+
+  .box3 {
+    top: 0.5rem;
+  }
+
+  .header_img {
+    height: 30vh;
+    width: 100%;
+  }
+  /* header ends */
+
+  /* showcase starts */
+  .showcase {
+    height: fit-content;
+  }
+
+  .project {
+    width: 100%;
+  }
+  /* showcase ends */
+
+  /* sevices starts */
+  .services {
+    height: fit-content;
+    padding: 3rem 2rem;
+    position: inherit;
+    display: flex;
+  }
+
+  .service_box {
+    width: 78vw;
+    margin: 0;
+    padding: 1rem;
+    z-index: 0;
+    height: fit-content;
+  }
+
+  .service {
+    margin: 0.5rem;
+    padding: 0.7rem;
+  }
+
+  .service_icon {
+    font-size: 1rem;
+  }
+
+  .service_heading {
+    margin-left: 0.6rem;
+  }
+
+  .service_details {
+    font-size: 0.9rem;
+    color: grey;
+    margin-top: 0.5rem;
+  }
+
+  .service_img {
+    display: none;
+  }
+
+  .servces_img1 {
+    display: none;
+  }
+
+  .servces_img2 {
+    display: none;
+  }
+  /* services ends */
+
+  /* focus starts */
+  .focus {
+    height: fit-content;
+  }
+
+  .focus_content {
+    flex-direction: column;
+  }
+
+  .focus_heading {
+    font-size: 1.7rem;
+    flex-basis: 100%;
+  }
+
+  .focus_content_wrapper {
+    flex-basis: 100%;
+  }
+
+  .focus_para {
+    margin-top: 0.8rem;
+  }
+
+  .focus_img {
+    height: auto;
+    width: 85vw;
+    margin: 1rem auto;
+  }
+  /* focus ends */
+
+  /* newsletter starts */
+  .search_domain {
+    border-radius: 0;
+    padding: 1.2rem;
+    margin: 2rem 0;
+  }
+
+  .search_domain > h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .search_div {
+    padding: 0.4rem 0.6rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    width: 90vw;
+  }
+
+  .icon_styling {
+    margin-right: 0.3rem;
+  }
+
+  .search_wrapper {
+    flex-basis: 75%;
+  }
+
+  .search_wrapper > i {
+    font-size: 1rem;
+  }
+
+  .search_domain_input {
+    font-size: 0.9rem;
+    width: 12rem;
+  }
+
+  .btn_search {
+    border-radius: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+
+  .search_domain > p {
+    max-width: 90vw;
+    font-size: 0.85rem;
+  }
+  /* newsletter ends */
+}
