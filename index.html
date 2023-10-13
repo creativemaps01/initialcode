@@ -35,6 +35,14 @@
     </nav>
     <!-- nav ends -->
 
+    <div class="popup">
+        <div class="content_box">
+            <div class="close"></div>
+            <img src="./asseets/images/offer.png" alt="">
+            <button class="btn_offer"><a href="https://forms.gle/pYw7g734XqTfzvaX9">Get Offer Now</a></button>
+        </div>
+    </div>
+
     <!-- header starts -->
     <header class="flex">
         <div class="header_left flex">
@@ -413,6 +421,22 @@
         </div>
     </div>
     <!-- about developer ends -->
+
+    <script>
+        const popup = document.querySelector(".popup");
+        const close = document.querySelector(".close");
+
+        window.onload = function () {
+            setTimeout(function () {
+                console.log("loaded");
+                popup.style.display = "block";
+            }, 5000);
+        };
+
+        close.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+    </script>
 
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <div class="elfsight-app-3c6272ca-f667-491f-9fe1-ec52cfb3a90f"></div>

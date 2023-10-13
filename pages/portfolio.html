@@ -30,6 +30,15 @@
     </nav>
     <!-- nav ends -->
 
+    <div class="popup">
+        <div class="content_box">
+            <div class="close"></div>
+            <img src="./asseets/images/offer.png" alt="">
+            <button class="btn_offer"><a href="https://forms.gle/pYw7g734XqTfzvaX9">Get Offer
+                    Now</a></button>
+        </div>
+    </div>
+
     <header class="portfolio_header flex">
         <div class="portfolio_header_left">
             <p class="header_left_txt">INTERIOR & ARCHITECTURE DESIGN STUDIO</p>
@@ -209,6 +218,22 @@
         </div>
     </div>
     <!-- about developer ends -->
+
+    <script>
+        const popup = document.querySelector(".popup");
+        const close = document.querySelector(".close");
+
+        window.onload = function () {
+            setTimeout(function () {
+                console.log("loaded");
+                popup.style.display = "block";
+            }, 5000);
+        };
+
+        close.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+    </script>
 
     <script src="../js/app.js"></script>
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
