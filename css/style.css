@@ -427,24 +427,6 @@ footer {
 }
 /* Footer ends */
 
-/* about developer starts */
-.about_developer {
-  justify-content: space-between;
-  padding: 1rem 3rem;
-  background-color: rgb(227, 225, 225);
-}
-
-.developer {
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.developer_name {
-  font-family: "Dancing Script", cursive;
-  font-size: 1.7rem;
-}
-/* about developer ends */
-
 @media only screen and (max-width: 770px) {
   /* nav start */
   .brand_name > img {

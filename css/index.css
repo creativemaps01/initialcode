@@ -1,3 +1,16 @@
+.current_offer {
+  z-index: 200;
+  max-width: 90vw;
+  display: flex;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer_img {
+  max-width: 90vw;
+}
+
 /* header starts */
 header {
   padding: 2rem 3.5rem;
